@@ -29,7 +29,7 @@ or
 }
 ```
 
-The service [expire](service-registry/server/lib/ServiceRegistry.js#L3).
+The service [expire](service-registry/server/lib/ServiceRegistry.js#L7).
 
 ### Version
 
