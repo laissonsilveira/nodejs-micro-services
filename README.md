@@ -4,6 +4,8 @@
 
 This is a app ([conference-app](conference-app)) sample to microservices with NodeJS.
 
+Here receive the requests and call the services regitered.
+
 ## Service Registry
 
 Project: [service-registry](service-registry)
@@ -44,6 +46,14 @@ The service [expire](service-registry/server/lib/ServiceRegistry.js#L7).
 Project: [feedback-service](feedback-service)
 
 Project: [speakers-service](speakers-service)
+
+### Services Server on listening
+
+`PUT <SERVICE-REGISTRY-HOST>/register/${config.name}/${config.version}/${server.address().port}`
+
+### Services on ERROR/SIGN TERM/BY INTERVAL/ETC
+
+`DELETE <SERVICE-REGISTRY-HOST>/register/${config.name}/${config.version}/${server.address().port}`
 
 ## Tolerance and Resilience
 
