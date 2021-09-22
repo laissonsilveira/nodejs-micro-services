@@ -58,9 +58,11 @@ Project: [speakers-service](speakers-service)
 ### [Circuit Break](conference-app/server/lib/CircuitBreaker.js)
 
 * Closed State
+
 ![Closed State](images/closed_state.png)
 
 * Circuit Break Control
+
 ![Circuit Break](images/circuit_break.png)
 
 * Cache and Cache Images (key = requestMethod + requestURL)
@@ -76,7 +78,7 @@ This example use the [RabbitMQ](https://www.rabbitmq.com)
 
 ### Queuing
 
-* addEntry(): [FeedbackService](conference-app/server/services/Feedback.js#L18)
+* addEntry()s: [FeedbackService](conference-app/server/services/Feedback.js#L18)
 
 ### Consuming and Store
 
