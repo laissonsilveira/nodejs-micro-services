@@ -1,12 +1,12 @@
 # nodejs-micro-services
 
-This is a app ([conference-app](conference-app)) sample to microservices with NodeJS.
+This is a app ([conference-app](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/conference-app)) sample to microservices with NodeJS.
 
 Here receive the requests and call the services regitered.
 
 ## Service Registry
 
-Project: [service-registry](service-registry)
+Project: [service-registry](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/service-registry)
 
 To register: `PUT|DELETE /register/:servicename/:serviceversion/:serviceport`
 
@@ -29,7 +29,7 @@ or
 }
 ```
 
-The service [expire](service-registry/server/lib/ServiceRegistry.js#L7).
+The service [expire](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/service-registry/server/lib/ServiceRegistry.js#L7).
 
 ### Version
 
@@ -41,9 +41,9 @@ The service [expire](service-registry/server/lib/ServiceRegistry.js#L7).
 
 ## Microservices
 
-Project: [feedback-service](feedback-service)
+Project: [feedback-service](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/feedback-service)
 
-Project: [speakers-service](speakers-service)
+Project: [speakers-service](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/speakers-service)
 
 ### Services Server on listening
 
@@ -55,7 +55,7 @@ Project: [speakers-service](speakers-service)
 
 ## Tolerance and Resilience
 
-### [Circuit Break](conference-app/server/lib/CircuitBreaker.js)
+### [Circuit Break](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/conference-app/server/lib/CircuitBreaker.js)
 
 * Closed State
 
@@ -67,7 +67,7 @@ Project: [speakers-service](speakers-service)
 
 * Cache and Cache Images (key = requestMethod + requestURL)
 
-* [SpeakersService](conference-app/server/services/Speakers.js#L78)
+* [SpeakersService](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/conference-app/server/services/Speakers.js#L78)
 
 ## Queues
 
@@ -78,9 +78,9 @@ This example use the [RabbitMQ](https://www.rabbitmq.com)
 
 ### Queuing
 
-* addEntry()s: [FeedbackService](conference-app/server/services/Feedback.js#L18)
+* addEntry()s: [FeedbackService](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/conference-app/server/services/Feedback.js#L18)
 
 ### Consuming and Store
 
-* [Consuming](feedback-service/server/service.js#L15)
-* [Store](feedback-service/server/service.js#L20)
+* [Consuming](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/feedback-service/server/service.js#L15)
+* [Store](https://github.com/laissonsilveira/nodejs-micro-services/tree/main/feedback-service/server/service.js#L20)
